@@ -32,18 +32,18 @@ export default function AINightSearch() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-white p-6">
       <div className="max-w-md mx-auto text-center">
-        {/* 💠 タイトル */}
+        {/* タイトル */}
         <div className="text-2xl mb-1">💎</div>
         <h1 className="text-4xl font-extrabold tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-yellow-100 via-pink-300 to-purple-500">
           AINIGHT LUXE
         </h1>
         <p className="text-sm text-pink-100 italic mt-1">AIと選ぶ、夜のとっておき。</p>
 
-        {/* 💃🕺 性別選択 */}
+        {/* 性別選択 */}
         <div className="grid grid-cols-2 gap-4 mt-6">
           {[
             { label: "LADY", value: "lady" },
-            { , label: "BOY", value: "boy" },
+            { label: "BOY", value: "boy" },
           ].map((option) => (
             <label
               key={option.value}
@@ -52,12 +52,12 @@ export default function AINightSearch() {
               }`}
               onClick={() => setSelectedGender(option.value)}
             >
-              <span className="text-lg mr-2">{option.icon}</span> {option.label}
+              {option.label}
             </label>
           ))}
         </div>
 
-        {/* 🍸 ジャンル選択 */}
+        {/* ジャンル選択 */}
         <div className="grid grid-cols-2 gap-4 mt-6">
           {genreOptions.map((genre) => (
             <label
@@ -69,20 +69,20 @@ export default function AINightSearch() {
               }`}
               onClick={() => toggleGenre(genre.value)}
             >
-              <span className="text-lg mr-2">{genre.icon}</span> {genre.label}
+              {genre.label}
             </label>
           ))}
         </div>
 
-        {/* 🟣 検索ボタン（ダミー） */}
+        {/* 検索ボタン */}
         <button
-  className="mt-8 w-full py-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-lg"
-  onClick={() =>
-    alert(`検索対象: ${selectedGender}\n選択ジャンル: ${selectedGenres.join(", ")}`)
-  }
->
-  AIでナイトスポットを探す
-</button>
+          className="mt-8 w-full py-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-lg"
+          onClick={() =>
+            alert(`検索対象: ${selectedGender}\n選択ジャンル: ${selectedGenres.join(", ")}`)
+          }
+        >
+          AIでナイトスポットを探す
+        </button>
       </div>
     </div>
   );
