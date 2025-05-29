@@ -71,5 +71,6 @@ export default function AILADY() {
         <AiledyResult results={results} />
       </div>
     </div>
+      </div>
   );
 }
