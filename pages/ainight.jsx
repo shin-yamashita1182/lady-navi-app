@@ -30,7 +30,7 @@ export default function AINightSearch() {
       ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-white p-6">
+    <div className="min-h-screen bg-[url('/bg-marble.jpg')] bg-cover bg-center bg-no-repeat text-white p-6 backdrop-blur-sm">
       <div className="max-w-md mx-auto text-center space-y-6">
 
         {/* タイトル */}
