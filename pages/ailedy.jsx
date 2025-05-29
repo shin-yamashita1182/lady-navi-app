@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import GenerateButton from "../components/GenerateButtonAILEDY";
 import AiledyResult from "../components/AiledyResult";
+import LuxeHeader from "../components/LuxeHeader";
+
 
 export default function AILADY() {
   const [location, setLocation] = useState("");
@@ -12,7 +14,8 @@ export default function AILADY() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-pink-100 p-6">
-      <h1 className="text-3xl font-bold mb-4">🌙 AILADY 女神ガイド</h1>
+      {/* 🏆 ここ差し替えポイント！ */}
+      <LuxeHeader />
 
       <div className="space-y-4">
         <input
