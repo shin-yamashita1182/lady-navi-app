@@ -11,7 +11,7 @@ export default function AILADY() {
   const [results, setResults] = useState([]);
 
   return (
-    <div className="min-h-screen bg-black text-pink-100 p-6">
+    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-pink-100 p-6">
       <h1 className="text-3xl font-bold mb-4">🌙 AILADY 女神ガイド</h1>
 
       <div className="space-y-4">
