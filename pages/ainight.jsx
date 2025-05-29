@@ -76,13 +76,13 @@ export default function AINightSearch() {
 
         {/* 🟣 検索ボタン（ダミー） */}
         <button
-          className="mt-8 w-full py-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-lg"
-          onClick={() =>
-            alert(`検索対象: ${selectedGender}\n選択ジャンル: ${selectedGenres.join(", ")}`)
-          }
-        >
-          ✨ AIでナイトスポットを探す
-        </button>
+  className="mt-8 w-full py-3 rounded-xl bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-lg"
+  onClick={() =>
+    alert(`検索対象: ${selectedGender}\n選択ジャンル: ${selectedGenres.join(", ")}`)
+  }
+>
+  AIでナイトスポットを探す
+</button>
       </div>
     </div>
   );
