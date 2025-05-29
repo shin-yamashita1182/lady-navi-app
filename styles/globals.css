@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* オプション：背景初期化 */
+body {
+  @apply bg-black text-white;
+}
