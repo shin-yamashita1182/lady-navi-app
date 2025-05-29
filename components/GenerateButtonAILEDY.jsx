@@ -18,9 +18,9 @@ export default function GenerateButtonAILEDY({
         body: JSON.stringify({ location, genre, vibe, time }),
       });
       const data = await res.json();
-      setResults(data.result); // ← setResultsに直接反映
+      setResults(data.result);
     } catch (err) {
-      console.error("💥 API呼び出し失敗:", err);
+      console.error("\uD83D\uDCA5 API呼び出し失敗:", err);
       setResults(["エラーが発生しました"]);
     }
     setLoading(false);
@@ -29,10 +29,10 @@ export default function GenerateButtonAILEDY({
   return (
     <button
       onClick={handleGenerate}
-      className="w-full p-4 bg-pink-600 rounded-xl text-white font-bold hover:bg-pink-700 mt-4"
+      className="w-full p-4 bg-pink-600 hover:bg-pink-500 text-white font-bold rounded-xl shadow-lg hover:shadow-pink-500/40 transition duration-300 animate-pulse"
       disabled={loading}
     >
-      {loading ? "🔄 検索中..." : "🔮 AIで女神を探す"}
+      {loading ? "\uD83D\uDD04 女神を召喚中..." : "\u2728 AIで女神を探す"}
     </button>
   );
 }
