@@ -26,6 +26,8 @@ export default function AiledyResult({ results }) {
 
   return (
     <div className="mt-6">
+        {/* ✅ TailwindCSSが効いてるかチェック用 */}
+    <h1 className="text-4xl text-pink-500 font-bold mb-4">🌙 Welcome to AI LADY!</h1>
       <h2 className="text-2xl font-bold mb-4">💎 女神スポット一覧</h2>
       {cards}
     </div>
