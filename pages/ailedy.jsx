@@ -4,7 +4,6 @@ import GenerateButton from "../components/GenerateButtonAILEDY";
 import AiledyResult from "../components/AiledyResult";
 import LuxeHeader from "../components/LuxeHeader";
 
-
 export default function AILADY() {
   const [location, setLocation] = useState("");
   const [genre, setGenre] = useState("ナイトバー");
@@ -13,64 +12,66 @@ export default function AILADY() {
   const [results, setResults] = useState([]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-pink-100 flex items-center justify-center p-4">
-    <div className="border-4 border-yellow-200 rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.2)] p-6 md:p-10 max-w-md w-full bg-black/30 backdrop-blur-md">
+    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-pink-100 p-4">
+      {/* 💎 上部にLuxeHeader（そのまま） */}
       <LuxeHeader />
-      
-      <div className="space-y-4">
-        <input
-          type="text"
-          placeholder="📍 地域を入力（例：中洲、すすきの）"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
-          className="w-full p-3 rounded-xl bg-gray-800 text-white"
-        />
 
-        <select
-          value={genre}
-          onChange={(e) => setGenre(e.target.value)}
-          className="w-full p-3 rounded-xl bg-gray-800 text-white"
-        >
-          <option value="ナイトバー">ナイトバー</option>
-          <option value="キャバクラ">キャバクラ</option>
-          <option value="ラウンジ">ラウンジ</option>
-          <option value="ガールズバー">ガールズバー</option>
-        </select>
+      {/* 🧸 下部にフォーム & 結果 */}
+      <div className="mt-6 max-w-md w-full mx-auto">
+        <div className="space-y-4">
+          <input
+            type="text"
+            placeholder="📍 地域を入力（例：中洲、すすきの）"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            className="w-full p-3 rounded-xl bg-gray-800 text-white"
+          />
 
-        <select
-          value={vibe}
-          onChange={(e) => setVibe(e.target.value)}
-          className="w-full p-3 rounded-xl bg-gray-800 text-white"
-        >
-          <option value="セクシー">セクシー</option>
-          <option value="おしゃれ">おしゃれ</option>
-          <option value="癒やし系">癒やし系</option>
-          <option value="ギャル系">ギャル系</option>
-        </select>
+          <select
+            value={genre}
+            onChange={(e) => setGenre(e.target.value)}
+            className="w-full p-3 rounded-xl bg-gray-800 text-white"
+          >
+            <option value="ナイトバー">ナイトバー</option>
+            <option value="キャバクラ">キャバクラ</option>
+            <option value="ラウンジ">ラウンジ</option>
+            <option value="ガールズバー">ガールズバー</option>
+          </select>
 
-        <select
-          value={time}
-          onChange={(e) => setTime(e.target.value)}
-          className="w-full p-3 rounded-xl bg-gray-800 text-white"
-        >
-          <option value="21:00以降">21:00以降</option>
-          <option value="22:00以降">22:00以降</option>
-          <option value="23:00以降">23:00以降</option>
-        </select>
+          <select
+            value={vibe}
+            onChange={(e) => setVibe(e.target.value)}
+            className="w-full p-3 rounded-xl bg-gray-800 text-white"
+          >
+            <option value="セクシー">セクシー</option>
+            <option value="おしゃれ">おしゃれ</option>
+            <option value="癒やし系">癒やし系</option>
+            <option value="ギャル系">ギャル系</option>
+          </select>
 
-        <GenerateButton
-          location={location}
-          genre={genre}
-          vibe={vibe}
-          time={time}
-          setResults={setResults}
-        />
-      </div>
+          <select
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+            className="w-full p-3 rounded-xl bg-gray-800 text-white"
+          >
+            <option value="21:00以降">21:00以降</option>
+            <option value="22:00以降">22:00以降</option>
+            <option value="23:00以降">23:00以降</option>
+          </select>
 
-      <div className="mt-8">
-        <AiledyResult results={results} />
+          <GenerateButton
+            location={location}
+            genre={genre}
+            vibe={vibe}
+            time={time}
+            setResults={setResults}
+          />
+        </div>
+
+        <div className="mt-8">
+          <AiledyResult results={results} />
+        </div>
       </div>
     </div>
-      </div>
   );
 }
