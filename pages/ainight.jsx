@@ -14,19 +14,19 @@ export default function AINightSearch() {
 
   const genreOptions = selectedGender === "lady"
     ? [
-        { icon: "🍸", label: "BAR", value: "BAR" },
-        { icon: "🎷", label: "LOUNGE", value: "LOUNGE" },
-        { icon: "💃", label: "CLUB", value: "CLUB" },
-        { icon: "🎶", label: "MUSIC BAR", value: "MUSIC BAR" },
-        { icon: "🍽️", label: "DINING BAR", value: "DINING BAR" },
-        { icon: "☕", label: "NIGHT CAFE", value: "NIGHT CAFE" },
+        { label: "BAR", value: "BAR" },
+        { label: "LOUNGE", value: "LOUNGE" },
+        { label: "CLUB", value: "CLUB" },
+        { label: "MUSIC BAR", value: "MUSIC BAR" },
+        { label: "DINING BAR", value: "DINING BAR" },
+        { label: "NIGHT CAFE", value: "NIGHT CAFE" },
       ]
     : [
-        { icon: "👑", label: "HOST CLUB", value: "HOST CLUB" },
-        { icon: "🍷", label: "MEN'S BAR", value: "MEN'S BAR" },
-        { icon: "🎧", label: "DJ NIGHT", value: "DJ NIGHT" },
-        { icon: "🕵️‍♂️", label: "男装ラウンジ", value: "男装ラウンジ" },
-        { icon: "🏳️‍🌈", label: "ALL GENDER BAR", value: "ALL GENDER BAR" },
+        { label: "HOST CLUB", value: "HOST CLUB" },
+        { label: "MEN'S BAR", value: "MEN'S BAR" },
+        { label: "DJ NIGHT", value: "DJ NIGHT" },
+        { label: "男装ラウンジ", value: "男装ラウンジ" },
+        { label: "ALL GENDER BAR", value: "ALL GENDER BAR" },
       ];
 
   return (
@@ -42,8 +42,8 @@ export default function AINightSearch() {
         {/* 💃🕺 性別選択 */}
         <div className="grid grid-cols-2 gap-4 mt-6">
           {[
-            { icon: "💃", label: "LADY", value: "lady" },
-            { icon: "🕺", label: "BOY", value: "boy" },
+            { label: "LADY", value: "lady" },
+            { , label: "BOY", value: "boy" },
           ].map((option) => (
             <label
               key={option.value}
