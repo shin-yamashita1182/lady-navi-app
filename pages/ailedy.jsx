@@ -13,10 +13,10 @@ export default function AILADY() {
   const [results, setResults] = useState([]);
 
   return (
-    <div className="border-4 border-yellow-200 rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.2)] p-6 md:p-10 max-w-md mx-auto bg-black/30 backdrop-blur-md">
-      {/* 🏆 ここ差し替えポイント！ */}
+    <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-pink-900 text-pink-100 flex items-center justify-center p-4">
+    <div className="border-4 border-yellow-200 rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.2)] p-6 md:p-10 max-w-md w-full bg-black/30 backdrop-blur-md">
       <LuxeHeader />
-
+      
       <div className="space-y-4">
         <input
           type="text"
