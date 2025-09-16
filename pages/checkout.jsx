@@ -1,5 +1,5 @@
 // /pages/checkout.jsx — モックチェックアウト
-import { PRODUCTS } from "../lib/oshidash.mock";
+import { PRODUCTS } from "../lib/oshidash.mock.js"; // ← .js
 import { useEffect, useState } from "react";
 
 
