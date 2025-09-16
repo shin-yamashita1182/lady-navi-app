@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import { ARTISTS, PRODUCTS, SUPPORTS_INIT } from "../../lib/oshidash.mock.js"; // ← .js
+import SupportForm from "../../components/SupportForm";
 import ProgressBar from "../../components/ProgressBar";
 import ProductCard from "../../components/ProductCard";
 
