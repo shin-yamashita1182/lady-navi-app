@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ARTISTS } from "../lib/oshidash.mock";
+import { ARTISTS } from "../lib/oshidash.mock.js";  // ← .js
 
 
 export default function Home() {
