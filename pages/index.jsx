@@ -99,11 +99,11 @@ export default function Home() {
 {/* Hero */}
 <section className="pt-8 sm:pt-12">
   {/* ✅ フル幅ラッパー */}
-  <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
+  <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] md:w-full md:mx-auto md:max-w-6xl md:ml-0 md:mr-0">
     <div className="relative overflow-hidden border-y border-slate-200 bg-black">
-  　　<div className="relative aspect-[21/9]">
-        <video
-          className="h-full w-full object-cover opacity-90"
+  　　<div className="relative aspect-[18/9]">
+         <video
+   className="h-full w-full object-cover opacity-90 scale-[1.18]"
           src={ASSETS.heroVideo}
           autoPlay
           muted
