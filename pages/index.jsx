@@ -161,8 +161,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div>  
 
   {/* ひとこと帯 */}
   <div className="mx-auto max-w-6xl px-4 mt-6 grid gap-4 sm:grid-cols-3">
