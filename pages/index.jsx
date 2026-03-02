@@ -96,14 +96,16 @@ export default function Home() {
           </div>
         </header>
 
-{/* Hero */}
-<section className="pt-8 sm:pt-12">
+ {/* Hero */}
+ <section className="pt-0">
   {/* ✅ フル幅ラッパー */}
   <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
-    <div className="relative overflow-hidden border-y border-slate-200 bg-black">
-  　　<div className="relative aspect-[18/9]">
+    {/* ✅ 上はヘッダーのborder-bがあるので、Heroは border-b のみにして“二重線”回避 */}
+    <div className="relative overflow-hidden border-b border-slate-200 bg-black">
+      {/* ✅ 縦を詰める：aspect固定をやめて高さをvhで制御（PCでも広すぎない） */}
+      <div className="relative h-[38vh] sm:h-[50vh] lg:h-[56vh] max-h-[620px]">
          <video
-   className="h-full w-full object-cover opacity-90 scale-[1.18]"
+   className="h-full w-full object-cover opacity-90 scale-[1.10]"
           src={ASSETS.heroVideo}
           autoPlay
           muted
