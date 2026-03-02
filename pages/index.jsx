@@ -96,152 +96,87 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Hero */}
-        <section className="pt-8 sm:pt-12">
-         {/* ✅ フル幅ラッパー追加 */}
-          <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
-            <div className="relative overflow-hidden rounded-none sm:rounded-3xl border-y sm:border border-slate-200 bg-black shadow-sm">
-  
-            <div className="relative aspect-[16/9]">
-              <video
-                className="h-full w-full object-cover opacity-90"
-                src={ASSETS.heroVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
-              {/* overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-black/10" />
-              <div className="absolute inset-0 p-6 sm:p-10 flex flex-col justify-end">
-                {/* ✅ テキストだけ中央幅に戻す */}
-                <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-                  <div className="max-w-2xl">
-                  <div className="text-xs tracking-[0.2em] text-white/80">
-                    ENSHU-RYU FUKUOKA / HATSUUME-KAI
-                  </div>
-                  <h1 className="mt-3 text-3xl sm:text-5xl font-semibold tracking-tight text-white">
-                    凛と咲く、初梅のように。
-                  </h1>
-                  <p className="mt-4 text-white/85 leading-relaxed">
-                    寒さの中にも清らかさを宿す、遠州流「きれい寂び」の美意識。
-                    <br className="hidden sm:block" />
-                    茶の湯は、自らを整える道。初梅会は、志ある女性が学びを深める場です。
-                  </p>
+{/* Hero */}
+<section className="pt-8 sm:pt-12">
+  {/* ✅ フル幅ラッパー */}
+  <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
+    <div className="relative overflow-hidden rounded-none sm:rounded-3xl border-y sm:border border-slate-200 bg-black shadow-sm">
+      <div className="relative aspect-[16/9]">
+        <video
+          className="h-full w-full object-cover opacity-90"
+          src={ASSETS.heroVideo}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
 
-                  <div className="mt-6 flex flex-wrap gap-3">
-                    <a
-                      href="#about"
-                      className="inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-100"
-                    >
-                      初梅会を知る
-                    </a>
-                    <a
-                      href="#contact"
-                      className="inline-flex items-center rounded-full border border-white/40 bg-white/10 px-5 py-2 text-sm font-semibold text-white hover:bg-white/15"
-                    >
-                      見学・お問い合わせ
-                    </a>
-                  </div>
-                </div>
+        {/* overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-black/10" />
 
-                <div className="mt-8 text-xs text-white/60">
-                  ※映像・写真はイメージ（差し替え可能）
-                </div>
+        <div className="absolute inset-0 p-6 sm:p-10 flex flex-col justify-end">
+          {/* ✅ テキストだけ中央幅に戻す */}
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+            <div className="max-w-2xl">
+              <div className="text-xs tracking-[0.2em] text-white/80">
+                ENSHU-RYU FUKUOKA / HATSUUME-KAI
               </div>
-            </div>
-              </div>
-          </div>
-
-
-          {/* ひとこと帯 */}
-          <div className="mx-auto max-w-6xl px-4 mt-6 grid gap-4 sm:grid-cols-3">
-            <Card className="p-5">
-              <div className="text-sm font-semibold">きれい寂び</div>
-              <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                華やかさに走らず、過度に飾らず、ただ端正に整える。
+              <h1 className="mt-3 text-3xl sm:text-5xl font-semibold tracking-tight text-white">
+                凛と咲く、初梅のように。
+              </h1>
+              <p className="mt-4 text-white/85 leading-relaxed">
+                寒さの中にも清らかさを宿す、遠州流「きれい寂び」の美意識。
+                <br className="hidden sm:block" />
+                茶の湯は、自らを整える道。初梅会は、志ある女性が学びを深める場です。
               </p>
-            </Card>
-            <Card className="p-5">
-              <div className="text-sm font-semibold">整える稽古</div>
-              <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                準備と片付けを大切に。所作と心を静かに磨きます。
-              </p>
-            </Card>
-            <Card className="p-5">
-              <div className="text-sm font-semibold">志ある女性の学び</div>
-              <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-                仕事に真摯に向き合い、教養として茶の湯を深めたい方へ。
-              </p>
-            </Card>
-          </div>
-        </section>
 
-        {/* About */}
-        <section id="about" className="mx-auto max-w-6xl px-4 pt-14 sm:pt-20">
-          <div className="grid gap-10 lg:grid-cols-2 items-start">
-            <div>
-              <SectionTitle
-                kicker="ABOUT"
-                title="初梅会 － Hatsuume-kai"
-                desc="茶の湯は、自らを整える道。初梅会は、遠州流茶道を通して志ある女性が学びを深める場です。"
-              />
-
-              <Card className="p-6">
-                <div className="text-sm font-semibold">「初梅」の由来</div>
-                <p className="mt-3 text-sm text-slate-700 leading-relaxed">
-                  初梅という名には、ひとつの願いが込められています。
-                  明治から昭和初期にかけて、寒中に咲く梅は、苦境にあってもくじけない女性、
-                  自らの道を切り開く女性の象徴として語られてきました。
-                </p>
-                <p className="mt-3 text-sm text-slate-700 leading-relaxed">
-                  情熱と自立を描いた与謝野晶子の時代背景とも重なります。
-                  凛と咲く梅のように、厳しい環境の中でも芯を失わないこと。
-                  初梅会は、その精神を礎に、静かに自身を磨き続ける場でありたいと願っています。
-                </p>
-              </Card>
-            </div>
-
-            <div className="grid gap-4">
-              <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                <div className="relative aspect-[4/3]">
-                  <Image
-                    src={ASSETS.img1}
-                    alt="空間の美"
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="#about"
+                  className="inline-flex items-center rounded-full bg-white px-5 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-100"
+                >
+                  初梅会を知る
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center rounded-full border border-white/40 bg-white/10 px-5 py-2 text-sm font-semibold text-white hover:bg-white/15"
+                >
+                  見学・お問い合わせ
+                </a>
               </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                  <div className="relative aspect-[4/3]">
-                    <Image
-                      src={ASSETS.img3}
-                      alt="庭"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
-                  <div className="relative aspect-[4/3]">
-                    <Image
-                      src={ASSETS.img4}
-                      alt="和菓子"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="text-xs text-slate-500">
-                写真は差し替え可能です（稽古風景・お茶会・道具などでも◎）。
+
+              <div className="mt-8 text-xs text-white/60">
+                ※映像・写真はイメージ（差し替え可能）
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* ひとこと帯 */}
+  <div className="mx-auto max-w-6xl px-4 mt-6 grid gap-4 sm:grid-cols-3">
+    <Card className="p-5">
+      <div className="text-sm font-semibold">きれい寂び</div>
+      <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+        華やかさに走らず、過度に飾らず、ただ端正に整える。
+      </p>
+    </Card>
+    <Card className="p-5">
+      <div className="text-sm font-semibold">整える稽古</div>
+      <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+        準備と片付けを大切に。所作と心を静かに磨きます。
+      </p>
+    </Card>
+    <Card className="p-5">
+      <div className="text-sm font-semibold">志ある女性の学び</div>
+      <p className="mt-2 text-sm text-slate-600 leading-relaxed">
+        仕事に真摯に向き合い、教養として茶の湯を深めたい方へ。
+      </p>
+    </Card>
+  </div>
+</section>
 
         {/* Enshu */}
         <section id="enshu" className="mx-auto max-w-6xl px-4 pt-14 sm:pt-20">
