@@ -100,8 +100,8 @@ export default function Home() {
 <section className="pt-8 sm:pt-12">
   {/* ✅ フル幅ラッパー */}
   <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
-    <div className="relative overflow-hidden rounded-none sm:rounded-3xl border-y sm:border border-slate-200 bg-black shadow-sm">
-      <div className="relative aspect-[16/9]">
+    <div className="relative overflow-hidden border-y border-slate-200 bg-black">
+  　　<div className="relative aspect-[21/9]">
         <video
           className="h-full w-full object-cover opacity-90"
           src={ASSETS.heroVideo}
