@@ -65,7 +65,11 @@ export default function Home() {
       </Head>
 
      <style jsx global>{`
-        html, body { overflow-x: hidden; }
+       html, body { 
+     overflow-x: hidden; 
+     margin: 0; 
+     padding: 0;
+   }
       `}</style>
 
       {/* 背景グラデ（やさしく） */}
