@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* オプション：背景初期化 */
+/* ✅ 初期化は “白紙” に近い状態にする（LP側でデザインする） */
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden; /* 念のため（最終は index.jsx 側でもOK） */
+}
+
 body {
-  @apply bg-black text-white;
+  background: transparent;
+  color: inherit;
 }
