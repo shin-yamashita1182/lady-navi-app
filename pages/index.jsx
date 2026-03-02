@@ -97,8 +97,11 @@ export default function Home() {
         </header>
 
         {/* Hero */}
-        <section className="mx-auto max-w-6xl px-4 pt-8 sm:pt-12">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-black shadow-sm">
+        <section className="pt-8 sm:pt-12">
+         {/* ✅ フル幅ラッパー追加 */}
+          <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
+            <div className="relative overflow-hidden rounded-none sm:rounded-3xl border-y sm:border border-slate-200 bg-black shadow-sm">
+  
             <div className="relative aspect-[16/9]">
               <video
                 className="h-full w-full object-cover opacity-90"
@@ -111,7 +114,9 @@ export default function Home() {
               {/* overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-black/10" />
               <div className="absolute inset-0 p-6 sm:p-10 flex flex-col justify-end">
-                <div className="max-w-2xl">
+                {/* ✅ テキストだけ中央幅に戻す */}
+                <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+                  <div className="max-w-2xl">
                   <div className="text-xs tracking-[0.2em] text-white/80">
                     ENSHU-RYU FUKUOKA / HATSUUME-KAI
                   </div>
@@ -145,10 +150,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+              </div>
           </div>
 
+
           {/* ひとこと帯 */}
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <div className="mx-auto max-w-6xl px-4 mt-6 grid gap-4 sm:grid-cols-3">
             <Card className="p-5">
               <div className="text-sm font-semibold">きれい寂び</div>
               <p className="mt-2 text-sm text-slate-600 leading-relaxed">
