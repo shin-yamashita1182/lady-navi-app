@@ -64,6 +64,10 @@ export default function Home() {
         />
       </Head>
 
+     <style jsx global>{`
+        html, body { overflow-x: hidden; }
+      `}</style>
+
       {/* 背景グラデ（やさしく） */}
       <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900">
         {/* Topbar */}
@@ -99,7 +103,7 @@ export default function Home() {
  {/* Hero */}
  <section className="pt-0">
   {/* ✅ フル幅ラッパー */}
-  <div className="relative left-1/2 w-screen -translate-x-1/2">
+  <div className="relative left-1/2 w-[100dvw] -translate-x-1/2">
     {/* ✅ 上はヘッダーのborder-bがあるので、Heroは border-b のみにして“二重線”回避 */}
     <div className="relative overflow-hidden border-b border-slate-200 bg-black">
       {/* ✅ 縦を詰める：aspect固定をやめて高さをvhで制御（PCでも広すぎない） */}
