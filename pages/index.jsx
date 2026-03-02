@@ -99,7 +99,7 @@ export default function Home() {
 {/* Hero */}
 <section className="pt-8 sm:pt-12">
   {/* ✅ フル幅ラッパー */}
-  <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)] md:w-full md:mx-auto md:max-w-6xl md:ml-0 md:mr-0">
+  <div className="w-screen ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]">
     <div className="relative overflow-hidden border-y border-slate-200 bg-black">
   　　<div className="relative aspect-[18/9]">
          <video
