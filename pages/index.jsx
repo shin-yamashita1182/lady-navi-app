@@ -19,9 +19,13 @@ function SectionTitle({ kicker, title, desc }) {
   );
 }
 
-function Card({ children, className = "" }) {
+function Card({ children, className = "", tone = "ume" }) {
+  const toneCls =
+    tone === "white"
+      ? "bg-white/90"
+      : "bg-rose-50/60"; // ✅ 薄い梅色（上品）
   return (
-    <div className={"rounded-2xl border border-slate-200 bg-white/80 shadow-sm " + className}>
+    <div className={"rounded-2xl border border-slate-200 shadow-sm " + toneCls + " " + className}>
       {children}
     </div>
   );
@@ -65,9 +69,10 @@ export default function Home() {
       </Head>
 
      <style jsx global>{`
-  html, body { overflow-x: clip; }
-`}</style>
-
+        /* ✅ 右スクロールバー根絶（hiddenより安定） */
+        html, body { overflow-x: clip; }
+      `}</style>
+      
       {/* 背景グラデ（やさしく） */}
       <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900">
         {/* Topbar */}
@@ -100,12 +105,12 @@ export default function Home() {
           </div>
         </header>
 
- {/* Hero */}
+  {/* Hero */}
  <section className="pt-0">
-  {/* ✅ フル幅（安全版） */}
-<div className="w-screen ml-[calc(50%-50vw)] overflow-hidden">
-  <div className="relative overflow-hidden border-b border-slate-200 bg-black">
-    <div className="relative h-[38vh] sm:h-[50vh] lg:h-[56vh] max-h-[620px]">
+  {/* ✅ フル幅ラッパー（100dvw方式をやめて、w-screen + ±calcで安全に） */}
+  <div className="w-screen ml-[calc(50%-50vw)] overflow-hidden">
+    {/* ✅ 上はヘッダーのborder-bがあるので、Heroは border-b のみにして“二重線”回避 */}
+    <div className="relative overflow-hidden border-b border-slate-200 bg-black">
       <video
         className="h-full w-full object-cover opacity-90 scale-[1.10]"
         src={ASSETS.heroVideo}
