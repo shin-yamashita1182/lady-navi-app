@@ -103,7 +103,7 @@ export default function Home() {
  {/* Hero */}
  <section className="pt-0">
   {/* ✅ フル幅ラッパー */}
-  <div className="relative left-1/2 w-[100dvw] -translate-x-1/2">
+  <div className="relative w-full overflow-hidden">
     {/* ✅ 上はヘッダーのborder-bがあるので、Heroは border-b のみにして“二重線”回避 */}
     <div className="relative overflow-hidden border-b border-slate-200 bg-black">
       {/* ✅ 縦を詰める：aspect固定をやめて高さをvhで制御（PCでも広すぎない） */}
