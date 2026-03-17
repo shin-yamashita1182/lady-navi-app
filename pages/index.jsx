@@ -977,13 +977,26 @@ export default function Home() {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(17, 38, 74, 0.08);
   border-color: #bfd2ee;
+}
+  .mapLink {
+  margin-left: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #1d64ff;
+  text-decoration: none;
+}
+
+.mapLink:hover {
+  text-decoration: underline;
+}
   
 }
 @media (max-width: 1080px) {
   .sectionHead::after {
     left: 0;
   }
-}
+
 
 @media (max-width: 720px) {
   .profileRow {
