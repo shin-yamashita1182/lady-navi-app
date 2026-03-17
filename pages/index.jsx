@@ -433,7 +433,7 @@ export default function Home() {
 
 .brandLogo {
   display: block;
-  width: 220px;
+  width: 160px;
   max-width: 100%;
   height: auto;
   object-fit: contain;
