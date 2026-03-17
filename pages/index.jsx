@@ -343,7 +343,7 @@ export default function Home() {
 </div>
 
             <div className="contactActions">
-              <Link href="/lady-ai" className="btn btnPrimary">
+              <Link href="/" className="btn btnPrimary">
                 AI ENTRY
               </Link>
               <a href="#top" className="btn btnGhost">
