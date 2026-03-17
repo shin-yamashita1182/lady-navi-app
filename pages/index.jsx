@@ -67,13 +67,20 @@ export default function Home() {
       <div id="top" className="dic">
         <header className="topbar">
           <div className="inner topin">
-            <div className="brand">
-              <div className="brandMark">DIC</div>
-              <div className="brandText">
-                <div className="brandTitle">Digital Innovation Center</div>
-                <div className="brandSub">CONCIDE / AI Platform / XR / Data Infrastructure</div>
-              </div>
-            </div>
+<div className="brand">
+  <div className="brandLogoWrap">
+    <img
+      src="/images/concide-logo.png"
+      alt="CONCIDE Digital Innovation Center"
+      className="brandLogo"
+    />
+  </div>
+
+  <div className="brandText">
+    <div className="brandTitle">Digital Innovation Center</div>
+    <div className="brandSub">CONCIDE / AI Platform / XR / Data Infrastructure</div>
+  </div>
+</div>
 
 <nav className="nav">
   <a href="#mission">MISSION</a>
@@ -402,13 +409,13 @@ export default function Home() {
             border-bottom: 1px solid rgba(255, 255, 255, 0.12);
           }
 
-          .topin {
-            min-height: 76px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-          }
+.topin {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
 
           .brand {
             display: flex;
@@ -417,19 +424,20 @@ export default function Home() {
             min-width: 0;
           }
 
-          .brandMark {
-            width: 54px;
-            height: 54px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #0a162d, #17315b);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            color: #ffffff;
-            font-size: 14px;
-            font-weight: 800;
-            letter-spacing: 0.12em;
-          }
+.brandLogoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.brandLogo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
           .brandTitle {
             color: #ffffff;
@@ -890,6 +898,9 @@ export default function Home() {
     border-right: 0;
     border-bottom: 1px solid #e4ebf3;
   }
+  .brandLogo {
+  width: 180px;
+}
 }
 
           .node {
