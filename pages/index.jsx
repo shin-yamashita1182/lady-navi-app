@@ -16,22 +16,26 @@ const PLATFORM_CARDS = [
   {
     no: "01",
     title: "AI Platform Infrastructure",
-    desc: "AI活用を支える基盤設計、データ接続、API連携、業務システム接続を統合的に構築します。",
+    desc: "AI活用を支える基盤設計、データ接続、API連携、業務システム統合を通じて、
+継続的に運用できる実装基盤を構築します。",
   },
   {
     no: "02",
     title: "AI Certification Center",
-    desc: "AIの信頼性、証明、運用設計、記録・証跡の整備を通じて、社会実装の土台をつくります。",
+    desc: "AIの信頼性、記録、運用設計、証跡・検証の整備を通じて、
+社会実装に耐えるAI活用の基盤づくりを担います。",
   },
   {
     no: "03",
     title: "AI Generation Center",
-    desc: "生成AI・エージェント・対話UI・プロトタイピングを通じて、新しい実装と表現を形にします。",
+    desc: "生成AI、エージェント、対話UI、プロトタイピングを通じて、
+新しい発想と実装を現実のサービスへ接続します。",
   },
   {
     no: "04",
     title: "XR / Medical Simulation",
-    desc: "XR・AR・シミュレーション技術を活用し、教育・訓練・理解促進の高度化に取り組みます。",
+    desc: "XR・AR・VR・シミュレーション技術を活用し、
+教育、訓練、理解促進、実践支援の高度化に取り組みます。",
   },
 ];
 
@@ -220,13 +224,13 @@ AI時代の新しい実装モデルを形にしていきます。
               <div className="techNote">
                 <div className="techNoteTitle">IMPLEMENTATION VIEW</div>
                 <p>
-                  私たちは、単にAIを導入するのではなく、
-                  接続、運用、証跡、可視化、インターフェースまでを含めて
-                  一体として設計します。
+私たちは、単にAIを導入するのではなく、
+接続、証明、可視化、運用、インターフェースまでを含めて
+一体として構想し、設計します。
                 </p>
                 <p>
-                  そのため、研究・構想・LP・プロトタイプ・API・UI・実運用まで、
-                  ひとつの流れとして扱います。
+そのため、研究・構想・LP・プロトタイプ・API・UI・実運用までを
+分断せずに扱い、社会の中で機能する実装へとつなげていきます。
                 </p>
               </div>
             </div>
@@ -275,11 +279,11 @@ AI時代の新しい実装モデルを形にしていきます。
               </div>
               <div className="contactCard">
                 <div className="contactLabel">FOCUS AREA</div>
-                <div className="contactValue">AI / XR / Platform / Infrastructure</div>
+                <div className="contactValue">AI / XR / Platform / Certification / Infrastructure</div>
               </div>
               <div className="contactCard">
                 <div className="contactLabel">NEXT STEP</div>
-                <div className="contactValue">Research / Collaboration / Platform Design</div>
+                <div className="contactValue">Research / Collaboration / Social Implementation/div>
               </div>
             </div>
 
