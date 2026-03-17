@@ -305,10 +305,21 @@ export default function Home() {
         <div className="profileVal">2013年4月（一般社団法人設立）</div>
       </div>
 
-       <div className="profileRow">
-        <div className="profileKey">所在地</div>
-        <div className="profileVal">〒102-0084　東京都千代田区二番町11番地3相互二番町ビルディング別館7階</div>
-      </div>
+<div className="profileRow">
+  <div className="profileKey">所在地</div>
+  <div className="profileVal">
+    〒102-0084 東京都千代田区二番町11番地3 相互二番町ビルディング別館7階
+    {" "}
+    <a
+      href="https://maps.app.goo.gl/5eu1SUBDZS4ZirfH6hl=ja&entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mapLink"
+    >
+      MAP
+    </a>
+  </div>
+</div>
 
       <div className="profileRow">
         <div className="profileKey">連絡先</div>
