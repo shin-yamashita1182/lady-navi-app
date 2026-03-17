@@ -16,26 +16,22 @@ const PLATFORM_CARDS = [
   {
     no: "01",
     title: "AI Platform Infrastructure",
-    desc: "AI活用を支える基盤設計、データ接続、API連携、業務システム統合を通じて、
-継続的に運用できる実装基盤を構築します。",
+    desc: "AI活用を支える基盤設計、データ接続、API連携、業務システム統合を通じて、継続的に運用できる実装基盤を構築します。",
   },
   {
     no: "02",
     title: "AI Certification Center",
-    desc: "AIの信頼性、記録、運用設計、証跡・検証の整備を通じて、
-社会実装に耐えるAI活用の基盤づくりを担います。",
+    desc: "AIの信頼性、記録、運用設計、証跡・検証の整備を通じて、社会実装に耐えるAI活用の基盤づくりを担います。",
   },
   {
     no: "03",
     title: "AI Generation Center",
-    desc: "生成AI、エージェント、対話UI、プロトタイピングを通じて、
-新しい発想と実装を現実のサービスへ接続します。",
+    desc: "生成AI、エージェント、対話UI、プロトタイピングを通じて、新しい発想と実装を現実のサービスへ接続します。",
   },
   {
     no: "04",
     title: "XR / Medical Simulation",
-    desc: "XR・AR・VR・シミュレーション技術を活用し、
-教育、訓練、理解促進、実践支援の高度化に取り組みます。",
+    desc: "XR・AR・VR・シミュレーション技術を活用し、教育、訓練、理解促進、実践支援の高度化に取り組みます。",
   },
 ];
 
@@ -68,7 +64,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="dic">
+      <div id="top" className="dic">
         <header className="topbar">
           <div className="inner topin">
             <div className="brand">
@@ -79,12 +75,13 @@ export default function Home() {
               </div>
             </div>
 
-            <nav className="nav">
-              <a href="#mission">MISSION</a>
-              <a href="#platform">PLATFORM</a>
-              <a href="#technology">TECHNOLOGY</a>
-              <a href="#contact">CONTACT</a>
-            </nav>
+<nav className="nav">
+  <a href="#mission">MISSION</a>
+  <a href="#platform">PLATFORM</a>
+  <a href="#technology">TECHNOLOGY</a>
+  <a href="#profile">PROFILE</a>
+  <a href="#contact">CONTACT</a>
+</nav>
           </div>
         </header>
 
@@ -149,21 +146,21 @@ export default function Home() {
 
             <div className="missionGrid">
               <div className="missionMain">
-                <p>
-Digital Innovation Center は、AI・XR・データ基盤を活用し、
-医療、公共、地域、企業の各領域における社会実装を支えるための拠点です。
-                </p>
-                <p>
-私たちは、単なる技術導入ではなく、
-設計、可視化、証跡、運用、インターフェースまでを一体として捉え、
-現場で機能するデジタル基盤を構築していきます。
-                </p>
-                <p>
-医療分野で培ってきた知見を基盤としながら、
-その応用範囲を社会全体へと広げ、
-AI時代の新しい実装モデルを形にしていきます。
-                </p>
-              </div>
+  <p>
+    Digital Innovation Center は、AI・XR・データ基盤を活用し、
+    医療、公共、地域、企業の各領域における社会実装を支えるための拠点です。
+  </p>
+  <p>
+    私たちは、単なる技術導入ではなく、
+    設計、可視化、証跡、運用、インターフェースまでを一体として捉え、
+    現場で実際に機能するデジタル基盤を構築していきます。
+  </p>
+  <p>
+    医療分野で培ってきた知見を土台としながらも、
+    その応用範囲を社会全体へと広げ、
+    AI時代にふさわしい新しい実装モデルを形にしていきます。
+  </p>
+</div>
 
               <div className="missionSide">
                 <div className="missionBox">
@@ -221,18 +218,18 @@ AI時代の新しい実装モデルを形にしていきます。
                 ))}
               </div>
 
-              <div className="techNote">
-                <div className="techNoteTitle">IMPLEMENTATION VIEW</div>
-                <p>
-私たちは、単にAIを導入するのではなく、
-接続、証明、可視化、運用、インターフェースまでを含めて
-一体として構想し、設計します。
-                </p>
-                <p>
-そのため、研究・構想・LP・プロトタイプ・API・UI・実運用までを
-分断せずに扱い、社会の中で機能する実装へとつなげていきます。
-                </p>
-              </div>
+<div className="techNote">
+  <div className="techNoteTitle">IMPLEMENTATION VIEW</div>
+  <p>
+    私たちは、単にAIを導入するのではなく、
+    接続、証明、可視化、運用、インターフェースまでを含めて
+    一体として構想し、設計します。
+  </p>
+  <p>
+    そのため、研究・構想・LP・プロトタイプ・API・UI・実運用までを
+    分断せずに扱い、社会の中で機能する実装へとつなげていきます。
+  </p>
+</div>
             </div>
           </div>
         </section>
@@ -262,30 +259,88 @@ AI時代の新しい実装モデルを形にしていきます。
           </div>
         </section>
 
-        <section id="contact" className="section contact">
-          <div className="inner">
-            <div className="sectionHead">
-              <div className="sectionNo">05</div>
-              <div>
-                <div className="sectionEn">CONTACT</div>
-                <h2>Digital Innovation Center</h2>
-              </div>
-            </div>
+        <section id="profile" className="section profile">
+  <div className="inner">
+    <div className="sectionHead">
+      <div className="sectionNo">05</div>
+      <div>
+        <div className="sectionEn">CENTER PROFILE</div>
+        <h2>デジタルイノベーションセンター概要</h2>
+      </div>
+    </div>
 
-            <div className="contactGrid">
-              <div className="contactCard">
-                <div className="contactLabel">ORGANIZATION</div>
-                <div className="contactValue">CONCIDE</div>
-              </div>
-              <div className="contactCard">
-                <div className="contactLabel">FOCUS AREA</div>
-                <div className="contactValue">AI / XR / Platform / Certification / Infrastructure</div>
-              </div>
-              <div className="contactCard">
-                <div className="contactLabel">NEXT STEP</div>
-                <div className="contactValue">Research / Collaboration / Social Implementation/div>
-              </div>
-            </div>
+    <div className="profileLead">
+      <p>
+        CONCIDE デジタルイノベーションセンターは、
+        AI、XR、データ基盤、システム設計を通じて、
+        社会実装に向けた研究・構想・開発を推進する拠点です。
+      </p>
+      <p>
+        医療分野で培った知見を土台にしながら、
+        公共、地域、企業領域へと接続を広げ、
+        次世代の実装モデルを構築していきます。
+      </p>
+    </div>
+
+    <div className="profileTable">
+      <div className="profileRow">
+        <div className="profileKey">名称</div>
+        <div className="profileVal">CONCIDE デジタルイノベーションセンター</div>
+      </div>
+
+      <div className="profileRow">
+        <div className="profileKey">センター長</div>
+        <div className="profileVal">山下 伸一郎</div>
+      </div>
+
+      <div className="profileRow">
+        <div className="profileKey">設立</div>
+        <div className="profileVal">2013年4月（一般社団法人設立）</div>
+      </div>
+
+      <div className="profileRow">
+        <div className="profileKey">事業領域</div>
+        <div className="profileVal">
+          AIプラットフォームの企画・設計・構築・運用、
+          AI証跡設計・証明・記録基盤に関する研究および社会実装、
+          XR（AR / VR / MR）を活用した教育・訓練・シミュレーション環境の設計、
+          医療・公共・地域・企業領域におけるデジタル基盤の企画・開発、
+          生成AI・対話UI・エージェント型システムの研究および開発。
+        </div>
+      </div>
+
+      <div className="profileRow">
+        <div className="profileKey">関連団体</div>
+        <div className="profileVal">一般社団法人 日本保健情報コンソシウム（CONCIDE）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" className="section contact">
+  <div className="inner">
+    <div className="sectionHead">
+      <div className="sectionNo">06</div>
+      <div>
+        <div className="sectionEn">CONTACT</div>
+        <h2>Digital Innovation Center</h2>
+      </div>
+    </div>
+
+<div className="contactGrid">
+  <div className="contactCard">
+    <div className="contactLabel">ORGANIZATION</div>
+    <div className="contactValue">CONCIDE Digital Innovation Center</div>
+  </div>
+  <div className="contactCard">
+    <div className="contactLabel">FOCUS AREA</div>
+    <div className="contactValue">AI / XR / Platform / Certification / Infrastructure</div>
+  </div>
+  <div className="contactCard">
+    <div className="contactLabel">NEXT STEP</div>
+    <div className="contactValue">Research / Collaboration / Social Implementation</div>
+  </div>
+</div>
 
             <div className="contactActions">
               <Link href="/lady-ai" className="btn btnPrimary">
@@ -298,12 +353,12 @@ AI時代の新しい実装モデルを形にしていきます。
           </div>
         </section>
 
-        <footer className="footer">
-          <div className="inner footerIn">
-            <div>© 2026 Digital Innovation Center / CONCIDE</div>
-            <div>AI Platform / XR / Data Infrastructure</div>
-          </div>
-        </footer>
+<footer className="footer">
+  <div className="inner footerIn">
+    <div>© 2026 CONCIDE Digital Innovation Center</div>
+    <div>AI Platform / XR / Certification / Data Infrastructure</div>
+  </div>
+</footer>
 
         <style jsx global>{`
           html {
@@ -766,6 +821,66 @@ AI時代の新しい実装モデルを形にしていきます。
             background: #ffffff;
             border: 1px solid #d9e1ec;
           }
+
+          .profile {
+  background: #f7f9fc;
+}
+
+.profileLead {
+  margin-bottom: 24px;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #d9e1ec;
+}
+
+.profileLead p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.95;
+  color: #34465c;
+}
+
+.profileTable {
+  background: #ffffff;
+  border: 1px solid #d9e1ec;
+}
+
+.profileRow {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-bottom: 1px solid #e4ebf3;
+}
+
+.profileRow:last-child {
+  border-bottom: 0;
+}
+
+.profileKey {
+  padding: 20px 22px;
+  background: #f3f6fb;
+  color: #1a2b43;
+  font-size: 14px;
+  font-weight: 800;
+  border-right: 1px solid #e4ebf3;
+}
+
+.profileVal {
+  padding: 20px 22px;
+  color: #34465c;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+@media (max-width: 720px) {
+  .profileRow {
+    grid-template-columns: 1fr;
+  }
+
+  .profileKey {
+    border-right: 0;
+    border-bottom: 1px solid #e4ebf3;
+  }
+}
 
           .node {
             min-height: 74px;
