@@ -381,7 +381,7 @@ export default function Home() {
 
 <footer className="footer">
   <div className="inner footerIn">
-    <div>© 2026 CONCIDE Digital Innovation Center</div>
+    <div>© 2024 CONCIDE Digital Innovation Center</div>
     <div>AI Platform / XR / Certification / Data Infrastructure</div>
   </div>
 </footer>
