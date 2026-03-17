@@ -298,6 +298,16 @@ export default function Home() {
         <div className="profileVal">2013年4月（一般社団法人設立）</div>
       </div>
 
+       <div className="profileRow">
+        <div className="profileKey">所在地</div>
+        <div className="profileVal">〒102-0084　東京都千代田区二番町11番地3相互二番町ビルディング別館7階</div>
+      </div>
+
+      <div className="profileRow">
+        <div className="profileKey">連絡先</div>
+        <div className="profileVal">03-5772-7584（代表電話）</div>
+      </div>
+
       <div className="profileRow">
         <div className="profileKey">事業領域</div>
         <div className="profileVal">
