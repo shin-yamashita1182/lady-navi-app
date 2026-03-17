@@ -469,12 +469,30 @@ export default function Home() {
             flex-wrap: wrap;
           }
 
-          .nav a {
-            color: rgba(255, 255, 255, 0.82);
-            text-decoration: none;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.12em;
+.nav a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding-bottom: 6px;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #7db7ff;
+  transition: width 0.2s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}acing: 0.12em;
           }
 
           .hero {
@@ -891,6 +909,14 @@ export default function Home() {
   border-right: 1px solid #e4ebf3;
 }
 
+.profileKey {
+  letter-spacing: 0.04em;
+}
+
+.profileVal {
+  background: linear-gradient(180deg, #ffffff, #fbfcfe);
+}
+
 .profileVal {
   padding: 20px 22px;
   color: #34465c;
@@ -905,6 +931,47 @@ export default function Home() {
 
 .profileLink:hover {
   text-decoration: underline;
+}
+.sectionHead {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sectionHead::after {
+  content: "";
+  position: absolute;
+  left: 84px;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, #1d64ff, rgba(29, 100, 255, 0));
+}
+.platformCard,
+.contactCard,
+.missionBox,
+.techBoard,
+.techNote,
+.profileLead,
+.profileTable {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.platformCard:hover,
+.contactCard:hover,
+.missionBox:hover,
+.techBoard:hover,
+.techNote:hover,
+.profileLead:hover,
+.profileTable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(17, 38, 74, 0.08);
+  border-color: #bfd2ee;
+  
+}
+@media (max-width: 1080px) {
+  .sectionHead::after {
+    left: 0;
+  }
 }
 
 @media (max-width: 720px) {
