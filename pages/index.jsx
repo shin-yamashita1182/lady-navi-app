@@ -311,7 +311,7 @@ export default function Home() {
     〒102-0084 東京都千代田区二番町11番地3 相互二番町ビルディング別館7階
     {" "}
     <a
-      href="https://maps.app.goo.gl/5eu1SUBDZS4ZirfH6hl=ja&entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
+      href="https://maps.app.goo.gl/5eu1SUBDZS4ZirfH6"
       target="_blank"
       rel="noopener noreferrer"
       className="mapLink"
