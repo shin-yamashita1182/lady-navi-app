@@ -503,8 +503,7 @@ export default function Home() {
 
 .nav a:hover::after {
   width: 100%;
-}acing: 0.12em;
-          }
+}
 
           .hero {
             position: relative;
@@ -878,7 +877,7 @@ export default function Home() {
             border: 1px solid #d9e1ec;
           }
 
-          .profile {
+.profile {
   background: #f7f9fc;
 }
 
@@ -918,14 +917,7 @@ export default function Home() {
   font-size: 14px;
   font-weight: 800;
   border-right: 1px solid #e4ebf3;
-}
-
-.profileKey {
   letter-spacing: 0.04em;
-}
-
-.profileVal {
-  background: linear-gradient(180deg, #ffffff, #fbfcfe);
 }
 
 .profileVal {
@@ -933,7 +925,9 @@ export default function Home() {
   color: #34465c;
   font-size: 14px;
   line-height: 1.95;
+  background: linear-gradient(180deg, #ffffff, #fbfcfe);
 }
+
 .profileLink {
   color: #1d64ff;
   text-decoration: none;
@@ -943,6 +937,7 @@ export default function Home() {
 .profileLink:hover {
   text-decoration: underline;
 }
+
 .sectionHead {
   position: relative;
   padding-bottom: 10px;
@@ -957,6 +952,7 @@ export default function Home() {
   height: 2px;
   background: linear-gradient(90deg, #1d64ff, rgba(29, 100, 255, 0));
 }
+
 .platformCard,
 .contactCard,
 .missionBox,
@@ -978,7 +974,8 @@ export default function Home() {
   box-shadow: 0 18px 40px rgba(17, 38, 74, 0.08);
   border-color: #bfd2ee;
 }
-  .mapLink {
+
+.mapLink {
   margin-left: 12px;
   font-size: 13px;
   font-weight: 800;
@@ -990,13 +987,12 @@ export default function Home() {
 .mapLink:hover {
   text-decoration: underline;
 }
-  
-}
+
 @media (max-width: 1080px) {
   .sectionHead::after {
     left: 0;
   }
-
+}
 
 @media (max-width: 720px) {
   .profileRow {
@@ -1007,11 +1003,11 @@ export default function Home() {
     border-right: 0;
     border-bottom: 1px solid #e4ebf3;
   }
-  .brandLogo {
-  width: 180px;
-}
-}
 
+  .brandLogo {
+    width: 180px;
+  }
+}
           .node {
             min-height: 74px;
             display: flex;
