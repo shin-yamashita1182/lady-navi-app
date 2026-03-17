@@ -326,10 +326,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="profileRow">
-        <div className="profileKey">関連団体</div>
-        <div className="profileVal">一般社団法人 日本保健情報コンソシウム（CONCIDE）</div>
-      </div>
+<div className="profileRow">
+  <div className="profileKey">関連団体</div>
+  <div className="profileVal">
+    <a
+      href="https://concide.or.jp/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="profileLink"
+    >
+      一般社団法人 日本保健情報コンソシウム（CONCIDE）
+    </a>
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -887,6 +896,15 @@ export default function Home() {
   color: #34465c;
   font-size: 14px;
   line-height: 1.95;
+}
+.profileLink {
+  color: #1d64ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.profileLink:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 720px) {
